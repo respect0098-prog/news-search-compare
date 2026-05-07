@@ -2,17 +2,6 @@
 
 Google News RSS 기반의 사실 데이터 수집과 Gemini를 활용한 자연어 요약, 그리고 네이버 검색 API 기반의 한국 언론사 뉴스 검색을 결합한 Streamlit 웹 애플리케이션입니다. 동일 키워드의 두 검색 결과를 나란히 비교하고, 모든 결과를 Supabase 클라우드 데이터베이스에 자동 저장합니다.
 
-비즈니스머신러닝 W9-10 실습과제2 결과물입니다.
-
-## 링크
-
-- 사이트 주소: https://YOUR-APP.streamlit.app/
-- GitHub 저장소: https://github.com/YOUR-USERNAME/YOUR-REPO
-
-> 위 두 URL은 본인의 실제 주소로 교체해주세요.
-
----
-
 ## 핵심 설계 — URL 환각 방지
 
 LLM(Gemini) 기반 검색을 직접 사용할 경우 모델이 그럴듯한 도메인 패턴으로 **존재하지 않는 URL을 생성하는 환각(hallucination) 문제**가 빈번하게 발생합니다. 본 앱은 이 문제를 책임 분리(Separation of Concerns) 설계로 해결했습니다.
